@@ -7,55 +7,55 @@ whether they would like to continue:
 
  
 
-Input                                                                                      Processing                                                                      Output
+Input                                              Processing                   Output
 
 
 Prompt the user:
 
-"Enter Customer ID"                                                process customerNum	                           customerID "101"
+"Enter Customer ID"                                process customerNum	        customerID "101"
  user enters  int customerNum                  
 
 
-"Enter Customer Name"                                       process String name                                       name "Bart Simpson"
+"Enter Customer Name"                              process String name          name "Bart Simpson"
 user enters String name
 
 
-"Enter Sales Amount"                                            process double salesAmt				   salesAmt "500.00"
+"Enter Sales Amount"                               process double salesAmt      salesAmt "500.00"
 user enters double salesAmt
 
-"Enter Tax Code"							     process String taxCode				   tax:
-                                                                                             convert to int tax                                               taxCode "NRM"
-user enters String taxCode																 	convert to tax =0.06	
-		if "NRM"																		   taxCode "NPF"
-		if "NPF"																				convert to tax =0.00
-		if "BIZ"																		   taxCode "BIZ"
-																								convert to tax=0.45
+"Enter Tax Code"			           process String taxCode	tax:
+                                                   convert to int tax           taxCode "NRM"
+user enters String taxCode							convert to tax =0.06	
+		if "NRM"							taxCode "NPF"
+		if "NPF"							convert to tax =0.00
+		if "BIZ"							taxCode "BIZ"
+										convert to tax=0.45
 
-		if  other input                                                                                                                                    Print "Invaild Entry. Please choose 
-																						   'NRM','NPF' or 'BIZ'
+		if  other input                                                 Print "Invaild Entry. Please choose 
+								                'NRM','NPF' or 'BIZ'
 
-Subtotal (salesAmt * tax)			            process double subtotal				   subtotal = "500.00 * 0.00 = 0.00"
+Subtotal (salesAmt * tax)			   process double subtotal	subtotal = "500.00 * 0.00 = 0.00"
 
-Total Amount Due						    process double total					   total = "0.00 + 500.00 = 500.00"
+Total Amount Due			           process double total		total = "0.00 + 500.00 = 500.00"
 (subtotal + salesAmt) 
                                                                                                                                                                                                           
-displayDetails							    process displayDetails                                    displayDetails     
+displayDetails				           process displayDetails       displayDetails     
           		              						                                                                                                    
-	 Customer ID:                                                                                                                                            Customer ID: 101
-         Customer Name:  																   Customer Name: Bart Simpson
-	 Sales Amount:																	   Sales Amount: 500.00
-	 Tax Code:																			   Tax Code: NPF	
-	 Total Amount Due:																   Total Amount Due:	500.00
+	 Customer ID:                                                           Customer ID: 101
+         Customer Name:  							Customer Name: Bart Simpson
+	 Sales Amount:								Sales Amount: 500.00
+	 Tax Code:								Tax Code: NPF	
+	 Total Amount Due:							Total Amount Due: 500.00
 
 Prompt the user:
 
-"Do you want to enter another                      process prompt						          Print "Do you want to enter another record? (Y/N)"
+"Do you want to enter another                      process prompt	        Print "Do you want to enter another record? (Y/N)"
 record? " (Y/N)
 
-	Y  									           process 'Y'								  Prompt the user to enter details
+	Y  				           process 'Y'                  Prompt the user to enter details
 
-	N										   process 'N'								  Print "Thank you!"
-																						  End program
+	N					   process 'N'			Print "Thank you!"
+										End program
 
-	Neither Y or N 																	  Print "Invalid Entry. Please choose 'Y' or 'N'
+	Neither Y or N 							        Print "Invalid Entry. Please choose 'Y' or 'N'
   
