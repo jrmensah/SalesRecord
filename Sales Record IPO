@@ -51,6 +51,6 @@ record? " (Y/N)
 
 	Yes										   process 'Y'								  Prompt the user to enter details
 
-	No										   process 'N'								  Print "Thank you and have a nice day!"
+	No										   process 'N'								  Print "Thank you!"
 																						  End program
   
