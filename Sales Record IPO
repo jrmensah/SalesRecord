@@ -31,6 +31,9 @@ user enters String taxCode																 	convert to tax =0.06
 		if "BIZ"																		   taxCode "BIZ"
 																								convert to tax=0.45
 
+		if  other input                                                                                                                                    Print "Invaild Entry. Please choose 
+																						   'NRM','NPF' or 'BIZ'
+
 Subtotal (salesAmt * tax)			            process double subtotal				   subtotal = "500.00 * 0.00 = 0.00"
 
 Total Amount Due						    process double total					   total = "0.00 + 500.00 = 500.00"
@@ -49,8 +52,10 @@ Prompt the user:
 "Do you want to enter another                      process prompt						          Print "Do you want to enter another record? (Y/N)"
 record? " (Y/N)
 
-	Yes										   process 'Y'								  Prompt the user to enter details
+	Y  									           process 'Y'								  Prompt the user to enter details
 
-	No										   process 'N'								  Print "Thank you!"
+	N										   process 'N'								  Print "Thank you!"
 																						  End program
+
+	Neither Y or N 																	  Print "Invalid Entry. Please choose 'Y' or 'N'
   
