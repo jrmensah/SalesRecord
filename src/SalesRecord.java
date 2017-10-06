@@ -41,6 +41,7 @@ public class SalesRecord {
         taxCode = scan.next();
             if(!taxCode.equalsIgnoreCase("NRM") && !taxCode.equalsIgnoreCase("NPF") &&!taxCode.equalsIgnoreCase("BIZ")){
                 System.out.println("Invalid Entry. Please choose 'NRM', 'NPF' or 'BIZ'");
+                taxCode = scan.next();
             }
         scan.nextLine();
 
@@ -71,6 +72,7 @@ public class SalesRecord {
             answer=scan.nextLine();
             if(!answer.equalsIgnoreCase("y") && !answer.equalsIgnoreCase("n")){
                 System.out.println("Invalid Entry. Please choose Y or N.");
+                answer=scan.nextLine();
             }
             if(answer.equalsIgnoreCase("n")){
                 System.out.println("Thank you!");
